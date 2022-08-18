@@ -1,0 +1,43 @@
+.home__index-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.home__index-wrap_bio-wrap {
+  height: 500px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.home__index-wrap_bio-content {
+  width: 60vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 3rem 0;
+}
+
+.home__index-wrap_bio-content_logo img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+}
+
+.home__index-wrap_bio-content_text {
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.home__index-wrap_bio-content_text h1 {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.home__index-wrap_bio-content_text p {
+  margin-bottom: 1.25rem;
+}
