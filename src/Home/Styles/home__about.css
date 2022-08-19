@@ -38,6 +38,7 @@
 .home__about-wrap_content-buttons a {
   padding: 0.375rem 0.75rem;
   background-color: #4dac6a;
+  border: 1px solid #4dac6a;
   border-radius: 0.25rem;
   transition: background 0.4s ease-in-out;
 }

@@ -7,7 +7,12 @@ import {
 } from "react-router-dom";
 import { useLayoutEffect } from "react";
 
-import { Home__Nav, Home__Index, Home__About } from "./Home/Home__Exports";
+import {
+  Home__Nav,
+  Home__Index,
+  Home__About,
+  Home__Contact,
+} from "./Home/Home__Exports";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -25,6 +30,7 @@ function App() {
           <Route path="/" element={<Home__Nav />}>
             <Route index element={<Home__Index />} />
             <Route path="about" element={<Home__About />} />
+            <Route path="contact" element={<Home__Contact />} />
           </Route>
         </Routes>
       </Wrapper>

@@ -27,7 +27,8 @@ body.Light .home__index-wrap_bio-wrap {
   /* background-image: url("../Assets/Images/CircuitBoardRed.jpg"); */
 }
 
-body.Light .home__about-wrap_content-buttons a:hover {
+body.Light .home__about-wrap_content-buttons a:hover,
+body.Light .home__contact_input-btn:hover {
   background-color: #101820;
   color: white;
 }
@@ -55,7 +56,8 @@ body.Dark .home__index-wrap_bio-wrap {
   /* background-image: url("../Assets/Images/CircuitBoard.jpg"); */
 }
 
-body.Dark .home__about-wrap_content-buttons a:hover {
+body.Dark .home__about-wrap_content-buttons a:hover,
+body.Dark .home__contact_input-btn:hover {
   background-color: #101820;
 }
 

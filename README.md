@@ -9,6 +9,7 @@
 - [ ] Have a home button absolutely positioned in the corner of all pages without the default Nav.
 - [ ] Include A Bio. Use https://anthonyconstant.co.uk and https://robertd.co.uk/ as references.
 - [ ] Sources Light/Dark Images For The Home Page. Coding Related? Tech Related? Abstract Patterns? Something Trippy?
+- [ ] Media Queries For All Pages!
 
 # Pages
 

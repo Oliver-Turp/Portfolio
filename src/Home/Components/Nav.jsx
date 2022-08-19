@@ -42,7 +42,7 @@ const Nav = () => {
                 Projects
               </NavLink>
               <NavLink
-                to="/"
+                to="contact"
                 className={({ isActive }) =>
                   isActive ? "homeLink active" : "homeLink inactive"
                 }
