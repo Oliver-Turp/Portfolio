@@ -12,7 +12,21 @@ import {
   Home__Index,
   Home__About,
   Home__Contact,
+  Home__Projects,
 } from "./Home/Home__Exports";
+
+import {
+  PM__About,
+  PM__Comments,
+  PM__Contact,
+  PM__Discord,
+  PM__Friends,
+  PM__Home,
+  PM__Patreon,
+  PM__TCG,
+  PM__WOF,
+  PM__YouTube,
+} from "./Phoenix_Media/PhoenixMedia__Exports";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -31,6 +45,7 @@ function App() {
             <Route index element={<Home__Index />} />
             <Route path="about" element={<Home__About />} />
             <Route path="contact" element={<Home__Contact />} />
+            <Route path="projects" element={<Home__Projects />} />
           </Route>
         </Routes>
       </Wrapper>

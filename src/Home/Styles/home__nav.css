@@ -33,6 +33,14 @@ body.Light .home__contact_input-btn:hover {
   color: white;
 }
 
+body.Light .home__projects_card-body {
+  background-color: #fff;
+}
+
+body.Light .home__projects_card-footer {
+  background-color: #f7f7f7;
+}
+
 /* DARK MODE */
 
 body.Dark .home__bg {
@@ -58,6 +66,14 @@ body.Dark .home__index-wrap_bio-wrap {
 
 body.Dark .home__about-wrap_content-buttons a:hover,
 body.Dark .home__contact_input-btn:hover {
+  background-color: #101820;
+}
+
+body.Dark .home__projects_card-body {
+  background-color: #333333;
+}
+
+body.Dark .home__projects_card-footer {
   background-color: #101820;
 }
 
