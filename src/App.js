@@ -26,6 +26,7 @@ import {
   PM__TCG,
   PM__WOF,
   PM__YouTube,
+  PM__Nav,
 } from "./Phoenix_Media/PhoenixMedia__Exports";
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
             <Route path="about" element={<Home__About />} />
             <Route path="contact" element={<Home__Contact />} />
             <Route path="projects" element={<Home__Projects />} />
+          </Route>
+          <Route path="/phoenixmedia" element={<PM__Nav />}>
+            <Route index element={<PM__Home />} />
           </Route>
         </Routes>
       </Wrapper>

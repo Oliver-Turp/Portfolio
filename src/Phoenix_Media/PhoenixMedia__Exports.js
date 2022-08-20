@@ -8,6 +8,7 @@ import PM__Patreon from "./Pages/PM__Patreon";
 import PM__TCG from "./Pages/PM__TCG";
 import PM__WOF from "./Pages/PM__WOF";
 import PM__YouTube from "./Pages/PM__YouTube";
+import PM__Nav from "./Components/PM__Nav";
 
 export {
   PM__About,
@@ -20,4 +21,5 @@ export {
   PM__TCG,
   PM__WOF,
   PM__YouTube,
+  PM__Nav,
 };

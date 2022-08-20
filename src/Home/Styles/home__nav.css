@@ -33,7 +33,8 @@ body.Light .home__contact_input-btn:hover {
   color: white;
 }
 
-body.Light .home__projects_card-body {
+body.Light .home__projects_card-body,
+body.Light .home__UI_card-body {
   background-color: #fff;
 }
 
@@ -69,7 +70,8 @@ body.Dark .home__contact_input-btn:hover {
   background-color: #101820;
 }
 
-body.Dark .home__projects_card-body {
+body.Dark .home__projects_card-body,
+body.Dark .home__UI_card-body {
   background-color: #333333;
 }
 

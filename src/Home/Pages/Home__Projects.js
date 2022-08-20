@@ -5,6 +5,26 @@ import UIData from "../Components/Home__UI-Examples-Data";
 import "../Styles/home__projects.css";
 
 const Home__Projects = () => {
+  const UIHeaders = UIData.filter(function (item) {
+    return item.section === "Header";
+  });
+
+  const UIImages = UIData.filter(function (item) {
+    return item.section === "Images";
+  });
+
+  const UIContact = UIData.filter(function (item) {
+    return item.section === "Contact";
+  });
+
+  const UIFooters = UIData.filter(function (item) {
+    return item.section === "Footer";
+  });
+
+  const UITheme = UIData.filter(function (item) {
+    return item.section === "Theme";
+  });
+
   return (
     <div className="home__projects-wrap">
       <div className="home__projects-content">
@@ -12,8 +32,8 @@ const Home__Projects = () => {
         <h2>custom static websites</h2>
         <div className="home__projects-content_grid">
           {WebsiteData.map((card) => (
-            <div className="home__projects_card-wrap">
-              <Link key={card.id} to="/">
+            <div className="home__projects_card-wrap" key={card.id}>
+              <Link to={card.link}>
                 <img src={card.image} alt={card.name} />
               </Link>
               <div className="home__projects_card-body">
@@ -36,19 +56,101 @@ const Home__Projects = () => {
           designs.
         </p>
         <div className="home__UI-content_grid">
-          {UIData.map((card) => {
-            <div className="home__UI_card-wrap">
-              <Link key={card.id} to="/">
-                <img src={card.video} alt={card.video} />
-              </Link>
-              <div className="home__UI_card-body">
-                <h5>
-                  {card.section}: {card.type}
-                </h5>
-                <p>{card.desc}</p>
+          <div className="home__UI-content_grid-row">
+            {UIHeaders.map((card) => (
+              <div
+                className="home__UI_card-wrap"
+                id="home__UI-headers_card"
+                key={card.id}
+              >
+                <Link to="/">
+                  <img src={card.video} alt={card.video} />
+                </Link>
+                <div className="home__UI_card-body">
+                  <h5>
+                    {card.section}: {card.type}
+                  </h5>
+                  <p>{card.desc}</p>
+                </div>
               </div>
-            </div>;
-          })}
+            ))}
+          </div>
+          <div className="home__UI-content_grid-row">
+            {UIImages.map((card) => (
+              <div
+                className="home__UI_card-wrap"
+                id="home__UI-headers_card"
+                key={card.id}
+              >
+                <Link to="/">
+                  <img src={card.video} alt={card.video} />
+                </Link>
+                <div className="home__UI_card-body">
+                  <h5>
+                    {card.section}: {card.type}
+                  </h5>
+                  <p>{card.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="home__UI-content_grid-row">
+            {UIContact.map((card) => (
+              <div
+                className="home__UI_card-wrap"
+                id="home__UI-headers_card"
+                key={card.id}
+              >
+                <Link to="/">
+                  <img src={card.video} alt={card.video} />
+                </Link>
+                <div className="home__UI_card-body">
+                  <h5>
+                    {card.section}: {card.type}
+                  </h5>
+                  <p>{card.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="home__UI-content_grid-row">
+            {UIFooters.map((card) => (
+              <div
+                className="home__UI_card-wrap"
+                id="home__UI-headers_card"
+                key={card.id}
+              >
+                <Link to="/">
+                  <img src={card.video} alt={card.video} />
+                </Link>
+                <div className="home__UI_card-body">
+                  <h5>
+                    {card.section}: {card.type}
+                  </h5>
+                  <p>{card.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="home__UI-content_grid-row">
+            {UITheme.map((card) => (
+              <div
+                className="home__UI_card-wrap"
+                id="home__UI-headers_card"
+                key={card.id}
+              >
+                <Link to="/">
+                  <img src={card.video} alt={card.video} />
+                </Link>
+                <div className="home__UI_card-body">
+                  <h5>
+                    {card.section}: {card.type}
+                  </h5>
+                  <p>{card.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

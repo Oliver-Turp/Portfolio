@@ -7,7 +7,7 @@ import ThemeToggle from "./Home__Theme";
 
 import "../Styles/home__nav.css";
 
-const Nav = () => {
+const Home__Nav = () => {
   return (
     <>
       <div className="home__bg">
@@ -79,4 +79,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Home__Nav;

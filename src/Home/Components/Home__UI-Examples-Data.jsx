@@ -53,7 +53,7 @@ const home__uiExamplesData = [
   {
     id: "008",
     section: "Contact",
-    type: "MailTo:",
+    type: "MailTo",
     desc: "Enter Desc Here",
     video: Temp,
   },
