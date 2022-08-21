@@ -57,6 +57,7 @@ function App() {
             <Route path="comments" element={<PM__Comments />} />
             <Route path="contact" element={<PM__Contact />} />
             <Route path="discord" element={<PM__Discord />} />
+            <Route path="friends" element={<PM__Friends />} />
           </Route>
         </Routes>
       </Wrapper>

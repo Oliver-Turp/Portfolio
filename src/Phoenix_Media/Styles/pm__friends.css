@@ -1,0 +1,87 @@
+.pm__friends-wrap {
+  padding: 1.5rem 0 1.5rem;
+}
+
+.pm__friends-wrap_header {
+  text-align: center;
+  padding: 0 2rem;
+  letter-spacing: 0.4rem;
+  margin-top: 10rem;
+  text-transform: uppercase;
+}
+
+.pm__friends-wrap_header h1 {
+  font-size: 6rem;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.pm__friends-wrap_content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  justify-items: center;
+  padding: 3rem 5rem;
+}
+
+.pm__friends-wrap_content-card {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid;
+}
+
+.pm__friends-wrap_content-card .banner {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.pm__friends-wrap_content-card .logo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  border-radius: 50%;
+  justify-self: center;
+  width: 80%;
+  padding: 0 1rem;
+}
+
+.pm__friends-wrap_content-card_grid {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.pm__friends-wrap_content-card_grid a img {
+  width: 60%;
+}
+
+.pm__friends-wrap_content-card p {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  align-self: center;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
