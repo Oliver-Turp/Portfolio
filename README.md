@@ -11,6 +11,8 @@
 - [ ] Sources Light/Dark Images For The Home Page. Coding Related? Tech Related? Abstract Patterns? Something Trippy?
 - [ ] Media Queries For All Pages!
 - [ ] Add a 'services' page? Maybe too money grabby as prices vary. Could use a 'from $x' method? Either way what would I offer? I'm only really good with static sites.
+- [ ] See if Sam wants to make graphic wallpaper for the projects bg
+- [ ] See if Sam would always make me a logo around my initials. This can be converted to a favicon too.
 
 # Pages
 

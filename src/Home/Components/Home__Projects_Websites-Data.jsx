@@ -6,7 +6,7 @@ const home__projects_websiteData = [
     name: "Phoenix Media",
     desc: "A Website For A YouTuber & Twitch Streamer",
     image: Temp,
-    link: "/phoenixmedia",
+    link: "/sandbox/projects/phoenixmedia",
     icon1: "HTML 5",
     icon2: "CSS 3",
     icon3: "REACT 18",

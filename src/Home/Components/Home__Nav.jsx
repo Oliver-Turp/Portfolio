@@ -1,4 +1,5 @@
 import { NavLink, Link, Outlet } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -10,6 +11,9 @@ import "../Styles/home__nav.css";
 const Home__Nav = () => {
   return (
     <>
+      <HelmetProvider>
+        <Helmet>{/* <link rel="icon" href={FavIcon} /> */}</Helmet>
+      </HelmetProvider>
       <div className="home__bg">
         <div className="home__header-wrap">
           <div className="home__header-wrap_content">

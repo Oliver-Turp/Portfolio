@@ -16,7 +16,6 @@ import {
 } from "./Home/Home__Exports";
 
 import {
-  PM__About,
   PM__Comments,
   PM__Contact,
   PM__Discord,
@@ -47,9 +46,15 @@ function App() {
             <Route path="about" element={<Home__About />} />
             <Route path="contact" element={<Home__Contact />} />
             <Route path="projects" element={<Home__Projects />} />
+            {/* PM REDIRECTS */}
+            <Route
+              path="phoenixmedia"
+              element={<Navigate to="/sandbox/projects/phoenixmedia" replace />}
+            />
           </Route>
-          <Route path="/phoenixmedia" element={<PM__Nav />}>
+          <Route path="/sandbox/projects/phoenixmedia" element={<PM__Nav />}>
             <Route index element={<PM__Home />} />
+            <Route path="comments" element={<PM__Comments />} />
           </Route>
         </Routes>
       </Wrapper>

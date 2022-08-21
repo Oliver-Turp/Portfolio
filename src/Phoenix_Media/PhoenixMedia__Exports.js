@@ -1,4 +1,3 @@
-import PM__About from "./Pages/PM__About";
 import PM__Comments from "./Pages/PM__Comments";
 import PM__Contact from "./Pages/PM__Contact";
 import PM__Discord from "./Pages/PM__Discord";
@@ -11,7 +10,6 @@ import PM__YouTube from "./Pages/PM__YouTube";
 import PM__Nav from "./Components/PM__Nav";
 
 export {
-  PM__About,
   PM__Comments,
   PM__Contact,
   PM__Discord,

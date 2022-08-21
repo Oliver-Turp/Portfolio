@@ -1,4 +1,7 @@
 import { NavLink, Link, Outlet } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import FavIcon from "../Assets/Images/favicon.png";
 
 import "../Styles/pm__nav.css";
 
@@ -42,6 +45,11 @@ const PM__Nav = () => {
 
   return (
     <>
+      <HelmetProvider>
+        <Helmet>
+          <link rel="icon" href={FavIcon} />
+        </Helmet>
+      </HelmetProvider>
       <div className="pm__container">
         <div className="pm__header-wrap_logo">
           <h1>
@@ -104,7 +112,7 @@ const PM__Nav = () => {
             <h2>useful links</h2>
           </div>
           <div className="pm__footer-links">
-            <Link to="/">top comments</Link>
+            <Link to="comments">top comments</Link>
             <Link to="/">wall of fame</Link>
             <Link to="/">friends of phoenix</Link>
             <Link to="/">random</Link>
