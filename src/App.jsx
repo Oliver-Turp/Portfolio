@@ -51,6 +51,25 @@ function App() {
               path="phoenixmedia"
               element={<Navigate to="/sandbox/projects/phoenixmedia" replace />}
             />
+            <Route
+              path="/sandbox/projects/phoenixmedia/tcg"
+              element={
+                <Navigate
+                  to="/sandbox/projects/phoenixmedia/turpochargedgaming"
+                  replace
+                />
+              }
+            />
+            <Route
+              path="/sandbox/projects/phoenixmedia/wof"
+              element={
+                <Navigate
+                  to="/sandbox/projects/phoenixmedia/walloffame"
+                  replace
+                />
+              }
+            />
+            {/* PM ROUTES */}
           </Route>
           <Route path="/sandbox/projects/phoenixmedia" element={<PM__Nav />}>
             <Route index element={<PM__Home />} />
@@ -58,7 +77,12 @@ function App() {
             <Route path="contact" element={<PM__Contact />} />
             <Route path="discord" element={<PM__Discord />} />
             <Route path="friends" element={<PM__Friends />} />
+            <Route path="patreon" element={<PM__Patreon />} />
+            <Route path="turpochargedgaming" element={<PM__TCG />} />
+            <Route path="walloffame" element={<PM__WOF />} />
+            <Route path="youtube" element={<PM__YouTube />} />
           </Route>
+          {/* GENERAL ERROR PAGE */}
         </Routes>
       </Wrapper>
     </Router>

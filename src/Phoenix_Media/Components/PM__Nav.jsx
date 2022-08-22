@@ -43,6 +43,21 @@ const PM__Nav = () => {
   //   }
   // );
 
+  // var sites = [
+  //   "comments",
+  //   "discord",
+  //   "friends",
+  //   "patreon",
+  //   "tcg",
+  //   "wof",
+  //   "youtube",
+  // ];
+
+  // function randomSite() {
+  //   var i = parseInt(Math.random() * sites.length);
+  //   location.href = sites[i];
+  // }
+
   return (
     <>
       <HelmetProvider>
@@ -84,22 +99,37 @@ const PM__Nav = () => {
               <div className="pm__header-wrap_nav-close_2"></div>
             </div>
             <div className="pm__header-wrap_nav-list">
-              <Link to="/" className="pm__nav-link">
+              <Link to="/phoenixmedia" className="pm__nav-link">
                 Home
               </Link>
-              <Link to="/" className="pm__nav-link">
+              <Link
+                to="/sandbox/projects/phoenixmedia/youtube"
+                className="pm__nav-link"
+              >
                 YouTube
               </Link>
-              <Link to="/" className="pm__nav-link">
+              <Link
+                to="/sandbox/projects/phoenixmedia/discord"
+                className="pm__nav-link"
+              >
                 Discord
               </Link>
-              <Link to="/" className="pm__nav-link">
+              <Link
+                to="/sandbox/projects/phoenixmedia/patreon"
+                className="pm__nav-link"
+              >
                 Patreon
               </Link>
-              <Link to="/" className="pm__nav-link">
+              <Link
+                to="/sandbox/projects/phoenixmedia/tcg"
+                className="pm__nav-link"
+              >
                 About
               </Link>
-              <Link to="/" className="pm__nav-link">
+              <Link
+                to="/sandbox/projects/phoenixmedia/contact"
+                className="pm__nav-link"
+              >
                 Contact
               </Link>
             </div>
@@ -113,10 +143,15 @@ const PM__Nav = () => {
           </div>
           <div className="pm__footer-links">
             <Link to="comments">top comments</Link>
-            <Link to="/">wall of fame</Link>
-            <Link to="/">friends of phoenix</Link>
-            <Link to="/">random</Link>
-            <Link to="/" id="pm__footer-links_double">
+            <Link to="/sandbox/projects/phoenixmedia/wof">wall of fame</Link>
+            <Link to="friends">friends of phoenix</Link>
+            <Link to="#" onClick="randomSite()">
+              random
+            </Link>
+            <Link
+              to="/sandbox/projects/phoenixmedia/tcg"
+              id="pm__footer-links_double"
+            >
               TurpoChargedGaming
             </Link>
           </div>
