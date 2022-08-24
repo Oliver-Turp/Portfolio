@@ -55,7 +55,7 @@ const PM__Nav = () => {
               <div className="pm__header-wrap_nav-close_1"></div>
               <div className="pm__header-wrap_nav-close_2"></div>
             </div>
-            <div className="pm__header-wrap_nav-list">
+            <div className="pm__header-wrap_nav-list" onClick={handleClick}>
               <Link to="/phoenixmedia" className="pm__nav-link">
                 Home
               </Link>

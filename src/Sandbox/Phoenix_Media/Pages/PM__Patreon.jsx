@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -8,15 +9,13 @@ import Sea from "../Assets/Images/sea.jpg";
 import "../Styles/pm__patreon.css";
 
 const PM__Patreon = () => {
-  // Array.from(document.querySelectorAll(".pm__patreon-btn")).forEach((item) => {
-  //   item.onclick = () => {
-  //     item.parentElement.parentElement.classList.toggle("change");
-  //   };
-  // });
+  const [btnState, setBtnState] = useState(false);
 
-  const Test = (e) => {
-    e.parentElement.parentElement.classList.toggle("change");
-  };
+  function handleClick() {
+    setBtnState((btnState) => !btnState);
+  }
+
+  let togglePatreonCheck = btnState ? " change" : "";
 
   return (
     <>
@@ -28,7 +27,7 @@ const PM__Patreon = () => {
       <div className="pm__patreon-wrap">
         <h1>patreon</h1>
         <div className="pm__patreon-wrap_content-wrap">
-          <div className="card">
+          <div className={`card${togglePatreonCheck}`}>
             <div className="card_front">
               <img src={Forest} alt="forest" />
               <h1>our community</h1>
@@ -39,12 +38,12 @@ const PM__Patreon = () => {
                 <li>unique discord emojis*</li>
                 <li>access to the phoenix newsletter</li>
               </ul>
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 price &gt;&gt;
               </button>
             </div>
             <div className="card_back">
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 &lt;&lt; back
               </button>
               <h3>&pound;5</h3>
@@ -52,7 +51,7 @@ const PM__Patreon = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className={`card${togglePatreonCheck}`}>
             <div className="card_front">
               <img src={River} alt="forest" />
               <h1>the inside scoop</h1>
@@ -63,12 +62,12 @@ const PM__Patreon = () => {
                 <li>early access to content</li>
                 <li>post video shout outs</li>
               </ul>
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 price &gt;&gt;
               </button>
             </div>
             <div className="card_back">
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 &lt;&lt; back
               </button>
               <h3>&pound;10</h3>
@@ -76,7 +75,7 @@ const PM__Patreon = () => {
             </div>
           </div>
 
-          <div className="card">
+          <div className={`card${togglePatreonCheck}`}>
             <div className="card_front">
               <img src={Sea} alt="forest" />
               <h1>join team phoenix</h1>
@@ -87,12 +86,12 @@ const PM__Patreon = () => {
                 <li>exclusive hangouts / Q&A</li>
                 <li>merch discounts *</li>
               </ul>
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 price &gt;&gt;
               </button>
             </div>
             <div className="card_back">
-              <button className="pm__patreon-btn" onClick={Test}>
+              <button className="pm__patreon-btn" onClick={handleClick}>
                 &lt;&lt; back
               </button>
               <h3>&pound;20</h3>

@@ -190,10 +190,9 @@
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   left: 0;
-  bottom: -100%;
+  bottom: 0;
   opacity: 0;
-  z-index: 300;
-  transition: bottom 0.5s, opacity 0.2s;
+  z-index: -300;
 }
 
 .pm__header-wrap_nav-content {
@@ -254,18 +253,12 @@
   text-align: center;
   line-height: 100vh;
   opacity: 0.8;
-  position: relative;
-  top: -100%;
-  transition: all 0.3s;
+  transform: translateY(100vh);
 }
 
 .change .pm__header-wrap_nav-wrap {
-  bottom: 0;
   opacity: 1;
-}
-
-.change .pm__nav-link {
-  top: 0;
+    z-index: 300;
 }
 
 .pm__nav-link:hover {
@@ -273,35 +266,40 @@
   color: var(--primary-color);
 }
 
-.change .pm__nav-link:nth-child(1) {
-  transition: top 1s 0.4s, opacity 0.3s, color 0.3s;
+.pm__nav-link:nth-child(1) {
+  transition: transform 1s ease-in-out 0.4s;
   background-color: #03c04a;
 }
 
-.change .pm__nav-link:nth-child(2) {
-  transition: top 1s 0.6s, opacity 0.3s, color 0.3s;
+.pm__nav-link:nth-child(2) {
+  transition: transform 1s ease-in-out 0.6s;
   background-color: #f08080;
 }
 
-.change .pm__nav-link:nth-child(3) {
-  transition: top 1s 0.8s, opacity 0.3s, color 0.3s;
-  background-color: #7289da;
+.pm__nav-link:nth-child(3) {
+  transition: transform 1s ease-in-out 0.8s;
+  background-color: #7289da;  
 }
 
-.change .pm__nav-link:nth-child(4) {
-  transition: top 1s 1s, opacity 0.3s, color 0.3s;
-  background-color: #f96854;
+.pm__nav-link:nth-child(4) {
+  transition: transform 1s ease-in-out 1s;
+  background-color: #f96854;  
 }
 
-.change .pm__nav-link:nth-child(5) {
-  transition: top 1s 1.2s, opacity 0.3s, color 0.3s;
-  background-color: #afeeee;
+.pm__nav-link:nth-child(5) {
+  transition: transform 1s ease-in-out 1.2s;
+  background-color: #afeeee;  
 }
 
-.change .pm__nav-link:nth-child(6) {
-  transition: top 1s 1.4s, opacity 0.3s, color 0.3s;
-  background-color: #800080;
+.pm__nav-link:nth-child(6) {
+  transition: transform 1s ease-in-out 1.4s;
+  background-color: #800080; 
 }
+
+.change .pm__nav-link {
+  transform: translateY(0);
+}
+
 
 /* FOOTER STYLES */
 
@@ -427,6 +425,16 @@
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1730px) {
+  .pm__header-wrap_nav-list {
+    flex-direction: column;
+  }
+
+  .pm__header-wrap_nav-list a {
+    line-height: 23vh
+  }
+}
+
 @media screen and (max-width: 1424px) {
   .pm__footer-form_name,
   .pm__footer-form_email {
@@ -508,5 +516,11 @@
     margin: 0.75rem 0 1rem;
     padding: 0.5rem 0;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pm__header-wrap_nav-list a {
+    font-size: 2rem;
   }
 }
