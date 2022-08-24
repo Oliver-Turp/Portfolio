@@ -9,7 +9,7 @@ const PM__WOF = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Phoenix Media | Temp</title>
+          <title>Phoenix Media | Wall of Fame</title>
         </Helmet>
       </HelmetProvider>
       <div className="wof__wrap">

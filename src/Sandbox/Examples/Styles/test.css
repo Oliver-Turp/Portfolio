@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#generic__content-wrap_logo-bg {
+  height: max-content;
+  background-image: url("https://source.unsplash.com/random/1920x500/?bright,wallpaper");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+#generic__content-wrap_logo-bg_logo-contents {
+  max-width: 70vw;
+  color: white;
+}
+
+#generic__content-wrap_logo-bg img {
+  border-radius: 50%;
+  height: auto;
+  max-width: 150px;
+}
+
+#generic__content-wrap_text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10rem;
+}
+
+#generic__content-wrap_text-wrap #left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 5rem;
+}
+
+#generic__content-wrap_text-wrap #left img {
+  width: 30%;
+  height: auto;
+}
+
+#generic__content-wrap_text-wrap #right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5rem;
+  letter-spacing: 0.05rem;
+}
+
+#generic__content-wrap_text-wrap #right p:nth-child(2) {
+  margin: 1.5rem 0;
+}

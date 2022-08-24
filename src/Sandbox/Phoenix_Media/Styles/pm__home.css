@@ -76,3 +76,24 @@
   font-size: 5rem;
   color: var(--white-color);
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 965px) {
+  .pm__home-txt h1 {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pm__home-txt h1 {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pm__home-txt h1 {
+    margin-left: 6rem;
+    font-size: 3rem;
+  }
+}

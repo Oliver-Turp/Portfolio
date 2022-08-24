@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
+import PersonalData from "../Components/Home__Projects_Personal-Data";
 import UIData from "../Components/Home__UI-Examples-Data";
 
 import "../Styles/home__projects.css";
@@ -40,6 +41,25 @@ const Home__Projects = () => {
           <h2>custom static websites</h2>
           <div className="home__projects-content_grid">
             {WebsiteData.map((card) => (
+              <div className="home__projects_card-wrap" key={card.id}>
+                <Link to={card.link} target="_blank">
+                  <img src={card.image} alt={card.name} />
+                </Link>
+                <div className="home__projects_card-body">
+                  <h5>{card.name}</h5>
+                  <p>{card.desc}</p>
+                </div>
+                <div className="home__projects_card-footer">
+                  <p>{card.icon1}</p>
+                  <p>{card.icon2}</p>
+                  <p>{card.icon3}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2>personal projects</h2>
+          <div className="home__projects-content_grid">
+            {PersonalData.map((card) => (
               <div className="home__projects_card-wrap" key={card.id}>
                 <Link to={card.link} target="_blank">
                   <img src={card.image} alt={card.name} />

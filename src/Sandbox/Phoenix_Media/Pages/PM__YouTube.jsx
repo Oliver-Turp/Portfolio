@@ -89,7 +89,7 @@ const PM__YouTube = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Phoenix Media | Temp</title>
+          <title>Phoenix Media | YouTube</title>
         </Helmet>
       </HelmetProvider>
 

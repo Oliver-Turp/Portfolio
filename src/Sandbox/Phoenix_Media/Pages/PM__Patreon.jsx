@@ -22,7 +22,7 @@ const PM__Patreon = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Phoenix Media | Temp</title>
+          <title>Phoenix Media | Patreon</title>
         </Helmet>
       </HelmetProvider>
       <div className="pm__patreon-wrap">

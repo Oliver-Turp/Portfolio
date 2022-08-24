@@ -26,7 +26,9 @@ import {
   PM__WOF,
   PM__YouTube,
   PM__Nav,
-} from "./Phoenix_Media/PhoenixMedia__Exports";
+} from "./Sandbox/Phoenix_Media/PhoenixMedia__Exports";
+
+import { GenericContent, NavTop } from "./Sandbox/Examples/ExamplesExports";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -69,8 +71,8 @@ function App() {
                 />
               }
             />
-            {/* PM ROUTES */}
           </Route>
+          {/* PM ROUTES */}
           <Route path="/sandbox/projects/phoenixmedia" element={<PM__Nav />}>
             <Route index element={<PM__Home />} />
             <Route path="comments" element={<PM__Comments />} />
@@ -81,6 +83,11 @@ function App() {
             <Route path="turpochargedgaming" element={<PM__TCG />} />
             <Route path="walloffame" element={<PM__WOF />} />
             <Route path="youtube" element={<PM__YouTube />} />
+          </Route>
+          {/* SANDBOX ROUTES */}
+          {/* HEADERS */}
+          <Route path="/sandbox/examples/headerTest" element={<NavTop />}>
+            <Route index element={<GenericContent />} />
           </Route>
           {/* GENERAL ERROR PAGE */}
         </Routes>

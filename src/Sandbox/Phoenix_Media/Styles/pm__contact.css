@@ -117,3 +117,38 @@
     background-color: #3d3d3d;
   }
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+  .pm__contact-wrap form {
+    width: 90%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .pm__contact-wrap h1 {
+    font-size: 6rem;
+  }
+
+  .pm__contact-wrap form {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pm__contact-wrap h1 {
+    font-size: 5rem;
+  }
+
+  .pm__contact-wrap form {
+    padding: 3rem 1rem;
+  }
+
+  .pm__contact_input-groups {
+    flex-direction: column;
+  }
+  .pm__contact_input-groups .pm__contact_input-group {
+    width: 100%;
+  }
+}

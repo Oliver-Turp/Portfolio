@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { NavLink, Link, Outlet } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -6,57 +7,13 @@ import FavIcon from "../Assets/Images/favicon.png";
 import "../Styles/pm__nav.css";
 
 const PM__Nav = () => {
-  // const container = document.querySelector(".pm__container");
+  const [btnState, setBtnState] = useState(false);
 
-  // document
-  //   .querySelector(".pm__header-wrap_hamburger")
-  //   .addEventListener("click", () => {
-  //     container.classList.add("change");
-  //   });
+  function handleClick() {
+    setBtnState((btnState) => !btnState);
+  }
 
-  // document
-  //   .querySelector(".pm__header-wrap_nav-close")
-  //   .addEventListener("click", () => {
-  //     container.classList.remove("change");
-  //   });
-
-  // const colors = [
-  //   "#03c04a",
-  //   "#f08080",
-  //   "#7289da",
-  //   "#f96854",
-  //   "#afeeee",
-  //   "#800080",
-  // ];
-
-  // let i = 0;
-
-  // Array.from(document.querySelectorAll(".pm__nav-link")).forEach((item) => {
-  //   item.style.cssText = `background-color: ${colors[i++]}`;
-  // });
-
-  // Array.from(document.querySelectorAll(".navigation-button")).forEach(
-  //   (item) => {
-  //     item.onclick = () => {
-  //       item.parentElement.parentElement.classList.toggle("change");
-  //     };
-  //   }
-  // );
-
-  // var sites = [
-  //   "comments",
-  //   "discord",
-  //   "friends",
-  //   "patreon",
-  //   "tcg",
-  //   "wof",
-  //   "youtube",
-  // ];
-
-  // function randomSite() {
-  //   var i = parseInt(Math.random() * sites.length);
-  //   location.href = sites[i];
-  // }
+  let toggleNavCheck = btnState ? " change" : "";
 
   return (
     <>
@@ -65,7 +22,7 @@ const PM__Nav = () => {
           <link rel="icon" href={FavIcon} />
         </Helmet>
       </HelmetProvider>
-      <div className="pm__container">
+      <div className={`pm__container${toggleNavCheck}`}>
         <div className="pm__header-wrap_logo">
           <h1>
             <span>P</span>
@@ -87,14 +44,14 @@ const PM__Nav = () => {
             <span>S</span>
           </h2>
         </div>
-        <div className="pm__header-wrap_hamburger">
+        <div className="pm__header-wrap_hamburger" onClick={handleClick}>
           <div className="pm__header-wrap_hamburger-line"></div>
           <div className="pm__header-wrap_hamburger-line"></div>
           <div className="pm__header-wrap_hamburger-line"></div>
         </div>
         <div className="pm__header-wrap_nav-wrap">
           <nav className="pm__header-wrap_nav-content">
-            <div className="pm__header-wrap_nav-close">
+            <div className="pm__header-wrap_nav-close" onClick={handleClick}>
               <div className="pm__header-wrap_nav-close_1"></div>
               <div className="pm__header-wrap_nav-close_2"></div>
             </div>

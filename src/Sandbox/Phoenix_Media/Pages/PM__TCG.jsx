@@ -10,7 +10,7 @@ const PM__TCG = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Phoenix Media | Temp</title>
+          <title>Phoenix Media | TCG</title>
         </Helmet>
       </HelmetProvider>
       <div className="tcg__banner">

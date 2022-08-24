@@ -7,7 +7,7 @@ const PM__Discord = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>Phoenix Media | Contact</title>
+          <title>Phoenix Media | Discord</title>
         </Helmet>
       </HelmetProvider>
       <div className="pm__discord-wrap">

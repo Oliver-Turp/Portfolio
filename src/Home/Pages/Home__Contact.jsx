@@ -77,10 +77,6 @@ const Home__Contact = () => {
               <div className="home__contact-wrap_content-wrap_right_links">
                 <h2>email</h2>
                 <a href="mailto:">email here</a>
-                <h2>github</h2>
-                <a href="">link here</a>
-                <h2>LinkedIn</h2>
-                <a href="">link here</a>
               </div>
               <div className="home__contact-wrap_content-wrap_right_text">
                 <h2>responses</h2>
