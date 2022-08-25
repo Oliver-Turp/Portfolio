@@ -65,10 +65,10 @@ const Home__Nav = () => {
               <p>copyright &copy; oliver turp 2022</p>
             </div>
             <div className="home__footer-wrap_content-right">
-              <Link to="/">
+              <Link to="https://github.com/Oliver-Turp">
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
-              <Link to="/">
+              <Link to="https://www.linkedin.com/in/oliverturp314/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
               <Link to="/">

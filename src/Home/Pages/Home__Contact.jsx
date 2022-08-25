@@ -81,6 +81,13 @@ const Home__Contact = () => {
               <div className="home__contact-wrap_content-wrap_right_text">
                 <h2>responses</h2>
                 <p>
+                  looking to create your dream website?
+                  <br />
+                  <br />
+                  head hunting for your latest project?
+                  <br />
+                  <br />
+                  <br />
                   please feel free to get in touch via any of the mediums
                   listed.
                   <br />

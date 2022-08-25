@@ -27,12 +27,17 @@ const Home__Index = () => {
               </p>
               <p>
                 despite my chosen field, during the pandemic I decided to teach
-                myself to code.
+                myself to code. I just finished a 12 week paid internship with a
+                national charity covering everything from data cleaning and
+                analysis to an intranet redesign project.
               </p>
+              <br />
+              <br />
               <p>
                 I have taken a keen interest in front end web design and
-                development.
+                development as well as data analysis.
               </p>
+              <br />
               <br />
               <p>
                 Please snoop around the <Link to="/">projects</Link> I've

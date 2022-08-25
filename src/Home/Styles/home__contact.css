@@ -70,8 +70,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
+  letter-spacing: .1rem;
 }
 
 .home__contact-wrap_content-wrap_right_links {

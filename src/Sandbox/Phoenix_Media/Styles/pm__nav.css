@@ -6,6 +6,7 @@
   --white-color: #fff;
   --grey-color: #555;
   --light-grey-color: #777;
+  --pm-font: 'Vollkorn', serif;
 }
 
 .pm__container {
@@ -14,6 +15,10 @@
   margin: 2.2rem 2.7rem;
   box-shadow: 0 1rem 3rem var(--grey-color);
   min-height: calc(100vh - 5.4rem);
+}
+
+.pm__container * {
+    font-family: var(--pm-font);
 }
 
 /* LOGO STYLES */

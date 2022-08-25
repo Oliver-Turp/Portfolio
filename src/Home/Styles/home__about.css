@@ -11,6 +11,11 @@
   text-transform: capitalize;
 }
 
+.home__about-wrap_content p {
+  line-height: 1.5rem;
+  letter-spacing: .01rem;
+}
+
 .home__about-wrap_content h1 {
   margin-bottom: 2rem;
 }
@@ -28,7 +33,7 @@
 }
 
 .home__about-wrap_content-list p {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
 }
 
 .home__about-wrap_content-buttons {
