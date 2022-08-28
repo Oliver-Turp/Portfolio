@@ -4,10 +4,9 @@
 
 #generic__content-wrap_logo-bg {
   height: max-content;
-  background-image: url("https://source.unsplash.com/random/1920x500/?bright,wallpaper");
+  background-image: url("https://www.worldatlas.com/r/w1200/upload/f3/f3/07/shutterstock-299773325-min-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   padding: 3rem 0;
 }

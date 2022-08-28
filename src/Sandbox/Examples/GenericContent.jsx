@@ -1,11 +1,16 @@
+import { useLocation } from 'react-router-dom';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Profile from "./Assets/Images/Glados.png";
 import Logo from "./Assets/Images/Logo.png";
 
-import "./Styles/test.css";
+import "./Styles/generic__content.css";
 
 const GenericContent = () => {
+  const path = useLocation().pathname;
+  const element = path.split("/")[3];
+  const type = path.split("/")[4];
+
   return (
     <>
       <HelmetProvider>
@@ -20,10 +25,10 @@ const GenericContent = () => {
         <div className="" id="generic__content-wrap_logo-bg">
           <div
             className="tw-flex tw-flex-col tw-content-center tw-m-auto tw-text-center"
-            id="generic__content-wrap_logo-bg_logo_contents"
+            id="generic__content-wrap_logo-bg_logo-contents"
           >
             <img src={Logo} alt="logo" className="tw-m-auto" />
-            <h3 className="tw-text-5xl tw-mt-5 tw-mb-2">Generic Title</h3>
+            <h3 className="tw-text-5xl tw-mt-5 tw-mb-2 tw-capitalize">{element}: {type}</h3>
             <h6 className="tw-text-xl">Welcome To The Sandbox</h6>
           </div>
         </div>

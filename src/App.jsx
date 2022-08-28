@@ -28,7 +28,7 @@ import {
   PM__Nav,
 } from "./Sandbox/Phoenix_Media/PhoenixMedia__Exports";
 
-import { GenericContent, NavTop } from "./Sandbox/Examples/ExamplesExports";
+import { Horizontal, DropDown, Hamburger } from "./Sandbox/Examples/ExamplesExports";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -86,9 +86,9 @@ function App() {
           </Route>
           {/* SANDBOX ROUTES */}
           {/* HEADERS */}
-          <Route path="/sandbox/examples/headerTest" element={<NavTop />}>
-            <Route index element={<GenericContent />} />
-          </Route>
+          <Route path="/sandbox/examples/header/horizontal" element={<Horizontal />} />
+          <Route path="/sandbox/examples/header/dropdown" element={<DropDown />} />
+          <Route path="/sandbox/examples/header/hamburger" element={<Hamburger />} />
           {/* GENERAL ERROR PAGE */}
         </Routes>
       </Wrapper>

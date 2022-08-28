@@ -9,13 +9,56 @@ import Sea from "../Assets/Images/sea.jpg";
 import "../Styles/pm__patreon.css";
 
 const PM__Patreon = () => {
-  const [btnState, setBtnState] = useState(false);
+  const [appState, changeState] = useState({
+    activeObject: null,
+    objects: [
+      {
+        img: Forest,
+        alt: "Forest",
+        h1: "our community",
+        li1: "unique discord role",
+        li2: "automatic entry to wall of fame",
+        li3: "patreon only discord channels*",
+        li4: "unique discord emojis*",
+        li5: "access to the phoenix newsletter",
+      },
+      {
+        img: River,
+        alt: "River",
+        h1: "the inside scoop",
+        li1: "all of tier 1",
+        li2: "bonus entries in giveaways *",
+        li3: "exclusive participation in videos",
+        li4: "early access to content",
+        li5: "post video shout outs",
+      },
+      {
+        img: Sea,
+        alt: "Sea",
+        h1: "join team phoenix",
+        li1: "all of tiers 1 & 2",
+        li2: "exclusive content",
+        li3: "sponsor a video",
+        li4: "exclusive hangouts / Q&A",
+        li5: "merch discounts *",
+      },
+    ]
+  });
 
-  function handleClick() {
-    setBtnState((btnState) => !btnState);
+  function toggleActive(index) {
+    changeState({ ...appState, activeObject: appState.objects[index] });
   }
 
-  let togglePatreonCheck = btnState ? " change" : "";
+  function toggleActiveStyles(index) {
+    console.log(appState.objects)
+    if (appState.objects[index] === appState.activeObject) {
+      return "card change";
+    } else {
+      return "card";
+    }
+  }
+
+
 
   return (
     <>
@@ -27,77 +70,30 @@ const PM__Patreon = () => {
       <div className="pm__patreon-wrap">
         <h1>patreon</h1>
         <div className="pm__patreon-wrap_content-wrap">
-          <div className={`card${togglePatreonCheck}`}>
-            <div className="card_front">
-              <img src={Forest} alt="forest" />
-              <h1>our community</h1>
-              <ul>
-                <li>unique discord role</li>
-                <li>automatic entry to wall of fame</li>
-                <li>patreon only discord channels*</li>
-                <li>unique discord emojis*</li>
-                <li>access to the phoenix newsletter</li>
-              </ul>
-              <button className="pm__patreon-btn" onClick={handleClick}>
-                price &gt;&gt;
-              </button>
-            </div>
-            <div className="card_back">
-              <button className="pm__patreon-btn" onClick={handleClick}>
+          {appState.objects.map((elements, index) => (
+            <div className={toggleActiveStyles(index)} key={index}>
+              <div className="card_front">
+                <img src={elements.img} alt={elements.alt} />
+                <h1>{elements.h1}</h1>
+                <ul>
+                  <li>{elements.li1}</li>
+                  <li>{elements.li2}</li>
+                  <li>{elements.li3}</li>
+                  <li>{elements.li4}</li>
+                  <li>{elements.li5}</li>
+                </ul>
+                <button className="pm__patreon-btn" onClick={() => { toggleActive(index) }}>
+                  price &gt;&gt;
+                </button>
+              </div>
+              <div className="card_back">
+                <button className="pm__patreon-btn" onClick={() => { toggleActive(index) }}>
                 &lt;&lt; back
               </button>
-              <h3>&pound;5</h3>
-              <Link to="">click me to pay*</Link>
+                <h3>&pound;5</h3>
+                <Link to="">click me to pay*</Link></div>
             </div>
-          </div>
-
-          <div className={`card${togglePatreonCheck}`}>
-            <div className="card_front">
-              <img src={River} alt="forest" />
-              <h1>the inside scoop</h1>
-              <ul>
-                <li>all of tier 1</li>
-                <li>bonus entries in giveaways *</li>
-                <li>exclusive participation in videos</li>
-                <li>early access to content</li>
-                <li>post video shout outs</li>
-              </ul>
-              <button className="pm__patreon-btn" onClick={handleClick}>
-                price &gt;&gt;
-              </button>
-            </div>
-            <div className="card_back">
-              <button className="pm__patreon-btn" onClick={handleClick}>
-                &lt;&lt; back
-              </button>
-              <h3>&pound;10</h3>
-              <Link to="">click me to pay*</Link>
-            </div>
-          </div>
-
-          <div className={`card${togglePatreonCheck}`}>
-            <div className="card_front">
-              <img src={Sea} alt="forest" />
-              <h1>join team phoenix</h1>
-              <ul>
-                <li>all of tiers 1 & 2</li>
-                <li>exclusive content</li>
-                <li>sponsor a video</li>
-                <li>exclusive hangouts / Q&A</li>
-                <li>merch discounts *</li>
-              </ul>
-              <button className="pm__patreon-btn" onClick={handleClick}>
-                price &gt;&gt;
-              </button>
-            </div>
-            <div className="card_back">
-              <button className="pm__patreon-btn" onClick={handleClick}>
-                &lt;&lt; back
-              </button>
-              <h3>&pound;20</h3>
-              <Link to="">click me to pay*</Link>
-            </div>
-          </div>
+          ))}
         </div>
         <p>*not yet set up</p>
       </div>

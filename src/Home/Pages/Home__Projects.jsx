@@ -91,8 +91,8 @@ const Home__Projects = () => {
                   id="home__UI-headers_card"
                   key={card.id}
                 >
-                  <Link to="/">
-                    <img src={card.video} alt={card.video} />
+                  <Link to={card.link} target="_blank">
+                    <img src={card.image} alt={card.image} />
                   </Link>
                   <div className="home__UI_card-body">
                     <h5>
@@ -110,8 +110,8 @@ const Home__Projects = () => {
                   id="home__UI-headers_card"
                   key={card.id}
                 >
-                  <Link to="/">
-                    <img src={card.video} alt={card.video} />
+                  <Link to={card.link} target="_blank">
+                    <img src={card.image} alt={card.image} />
                   </Link>
                   <div className="home__UI_card-body">
                     <h5>
@@ -129,8 +129,8 @@ const Home__Projects = () => {
                   id="home__UI-headers_card"
                   key={card.id}
                 >
-                  <Link to="/">
-                    <img src={card.video} alt={card.video} />
+                  <Link to={card.link} target="_blank">
+                    <img src={card.image} alt={card.image} />
                   </Link>
                   <div className="home__UI_card-body">
                     <h5>
@@ -148,8 +148,8 @@ const Home__Projects = () => {
                   id="home__UI-headers_card"
                   key={card.id}
                 >
-                  <Link to="/">
-                    <img src={card.video} alt={card.video} />
+                  <Link to={card.link} target="_blank">
+                    <img src={card.image} alt={card.image} />
                   </Link>
                   <div className="home__UI_card-body">
                     <h5>
@@ -167,8 +167,8 @@ const Home__Projects = () => {
                   id="home__UI-headers_card"
                   key={card.id}
                 >
-                  <Link to="/">
-                    <img src={card.video} alt={card.video} />
+                  <Link to={card.link} target="_blank">
+                    <img src={card.image} alt={card.image} />
                   </Link>
                   <div className="home__UI_card-body">
                     <h5>

@@ -9,7 +9,7 @@
 - [x] ~~Have a home button absolutely positioned in the corner of all pages without the default Nav.~~ Went new tab route instead
 - [ ] Include A Bio. Use https://anthonyconstant.co.uk and https://robertd.co.uk/ as references.
 - [x] ~~Sources Light/Dark Images For The Home Page. Coding Related? Tech Related? Abstract Patterns? Something Trippy?~~ Attempting to get custom art done.
-- [ ] Media Queries For All Pages!
+- [ ] Media Queries For All Pages! INCLUDING UI EXAMPLES!
 - [ ] Add a 'services' page? Maybe too money grabby as prices vary. Could use a 'from $x' method? Either way what would I offer? I'm only really good with static sites. Lists of 1 aren't good to look at.
 - [x] ~~See if Sam wants to make graphic wallpaper for the projects bg~~ He wouldn't do it. ET may help instead
 - [x] ~~See if Sam would always make me a logo around my initials. This can be converted to a favicon too.~~ He wouldn't do it. ET may help instead

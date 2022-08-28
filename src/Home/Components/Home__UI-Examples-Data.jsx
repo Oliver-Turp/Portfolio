@@ -6,91 +6,96 @@ const home__uiExamplesData = [
     section: "Header",
     type: "Horizontal",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "/sandbox/examples/header/horizontal"
   },
   {
     id: "002",
     section: "Header",
     type: "Drop Down",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "/sandbox/examples/header/dropdown"
   },
   {
     id: "003",
     section: "Header",
-    type: "Vertical",
+    type: "Hamburger",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "/sandbox/examples/header/hamburger"
   },
   {
     id: "004",
-    section: "Header",
-    type: "Hamburger",
+    section: "Images",
+    type: "Gallery",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "005",
     section: "Images",
-    type: "Gallery",
+    type: "Carousel",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "006",
-    section: "Images",
-    type: "Carousel",
+    section: "Contact",
+    type: "Form",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "007",
     section: "Contact",
-    type: "Form",
+    type: "MailTo",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "008",
-    section: "Contact",
-    type: "MailTo",
+    section: "Footer",
+    type: "Directory",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "009",
     section: "Footer",
-    type: "Directory",
+    type: "Plain",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "010",
     section: "Footer",
-    type: "Plain",
+    type: "Hover",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "011",
-    section: "Footer",
-    type: "Hover",
+    section: "Theme",
+    type: "Static",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
   {
     id: "012",
     section: "Theme",
-    type: "Static",
-    desc: "Enter Desc Here",
-    video: Temp,
-  },
-  {
-    id: "013",
-    section: "Theme",
     type: "Toggle",
     desc: "Enter Desc Here",
-    video: Temp,
+    image: Temp,
+    link: "#"
   },
 ];
 
