@@ -31,7 +31,7 @@ const home__uiExamplesData = [
     type: "Gallery",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/image/gallery"
   },
   {
     id: "005",
@@ -39,7 +39,7 @@ const home__uiExamplesData = [
     type: "Carousel",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/image/carousel"
   },
   {
     id: "006",
