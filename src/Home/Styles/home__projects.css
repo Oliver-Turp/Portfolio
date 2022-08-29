@@ -91,8 +91,22 @@
 
 .home__UI-content_grid-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1.9rem;
+}
+
+.home__UI-content_grid-row.split {
+  display: grid;
+  grid-template-areas: "cardLeft . cardRight";
+}
+
+.home__UI-content_grid-row.split .home__UI_card-wrap:nth-child(1) {
+  grid-area: cardLeft;
+}
+
+.home__UI-content_grid-row.split .home__UI_card-wrap:nth-child(2) {
+  grid-area: cardRight;
 }
 
 .home__UI_card-wrap {

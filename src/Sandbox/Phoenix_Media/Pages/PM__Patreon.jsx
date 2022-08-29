@@ -21,6 +21,7 @@ const PM__Patreon = () => {
         li3: "patreon only discord channels*",
         li4: "unique discord emojis*",
         li5: "access to the phoenix newsletter",
+        active: false
       },
       {
         img: River,
@@ -31,6 +32,7 @@ const PM__Patreon = () => {
         li3: "exclusive participation in videos",
         li4: "early access to content",
         li5: "post video shout outs",
+        active: false
       },
       {
         img: Sea,
@@ -41,17 +43,23 @@ const PM__Patreon = () => {
         li3: "sponsor a video",
         li4: "exclusive hangouts / Q&A",
         li5: "merch discounts *",
+        active: false
       },
     ]
   });
 
   function toggleActive(index) {
-    changeState({ ...appState, activeObject: appState.objects[index] });
+    const currentObj = { ...appState.objects[index] };
+    currentObj.active = !currentObj.active;
+
+    const copy = { ...appState };
+    copy.objects.splice(index, 1, currentObj);
+
+    changeState({ ...copy });
   }
 
   function toggleActiveStyles(index) {
-    console.log(appState.objects)
-    if (appState.objects[index] === appState.activeObject) {
+    if (appState.objects[index].active) {
       return "card change";
     } else {
       return "card";

@@ -3,9 +3,9 @@
     height: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
- position: relative;
+    position: relative;
 }
 
 .generic__sidebar_burger {

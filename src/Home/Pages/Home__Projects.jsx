@@ -103,7 +103,7 @@ const Home__Projects = () => {
                 </div>
               ))}
             </div>
-            <div className="home__UI-content_grid-row">
+            <div className="home__UI-content_grid-row split">
               {UIImages.map((card) => (
                 <div
                   className="home__UI_card-wrap"
@@ -122,7 +122,7 @@ const Home__Projects = () => {
                 </div>
               ))}
             </div>
-            <div className="home__UI-content_grid-row">
+            <div className="home__UI-content_grid-row split">
               {UIContact.map((card) => (
                 <div
                   className="home__UI_card-wrap"
@@ -160,7 +160,7 @@ const Home__Projects = () => {
                 </div>
               ))}
             </div>
-            <div className="home__UI-content_grid-row">
+            <div className="home__UI-content_grid-row split">
               {UITheme.map((card) => (
                 <div
                   className="home__UI_card-wrap"
