@@ -1,12 +1,21 @@
-import Content from '../../GenericContent';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-import '../../Styles/images__carousel.css'
+import Slider from './Backend/ImageSlider';
+import { SliderData } from "./Backend/SliderData";
+
+import '../../Styles/images__carousel.css';
 
 const Carousel = () => {
     return (
-        <div>Carousel</div>
+        <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>UI Examples | Temp</title>
+                </Helmet>
+            </HelmetProvider>
+
+            <Slider slides={SliderData} />
+        </>
     )
 }
 

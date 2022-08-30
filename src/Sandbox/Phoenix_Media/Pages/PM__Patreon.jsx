@@ -66,8 +66,6 @@ const PM__Patreon = () => {
     }
   }
 
-
-
   return (
     <>
       <HelmetProvider>

@@ -1,11 +1,8 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
 
 import Carousel from "../Components/ImageSlider";
 
 import TCG_Banner from "../Assets/Images/channels4_banner.jpg";
-import Left from "../Assets/Images/l_arrow.svg";
-import Right from "../Assets/Images/r_arrow.svg";
 
 import "../Styles/pm__youtube.css";
 import { SliderData } from "../Components/SliderData";

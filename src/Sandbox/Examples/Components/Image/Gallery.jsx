@@ -93,7 +93,6 @@ const Gallery = () => {
         }
     }
 
-
     return (
         <>
             <HelmetProvider>
