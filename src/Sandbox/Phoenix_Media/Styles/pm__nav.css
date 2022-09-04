@@ -49,10 +49,6 @@
   align-items: center;
 }
 
-.pm__header-wrap_logo h1 span:nth-child() {
-  animation: drop-letters-top 5s 0.1s infinite;
-}
-
 .pm__header-wrap_logo h1 span:nth-child(1) {
   animation: drop-letters-top 5s 0.1s infinite;
 }

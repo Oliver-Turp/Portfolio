@@ -30,6 +30,8 @@ import {
 
 import { Horizontal, DropDown, Hamburger, Carousel, Gallery } from "./Sandbox/Examples/ExamplesExports";
 
+import Error from "./Error";
+
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -40,7 +42,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/">
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home__Nav />}>
@@ -93,6 +95,7 @@ function App() {
           <Route path="/sandbox/examples/image/gallery" element={<Gallery />} />
           <Route path="/sandbox/examples/image/carousel" element={<Carousel />} />
           {/* GENERAL ERROR PAGE */}
+          <Route path="*" element={<Error />} />
         </Routes>
       </Wrapper>
     </Router>
