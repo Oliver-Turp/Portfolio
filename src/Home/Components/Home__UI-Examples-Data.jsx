@@ -44,7 +44,7 @@ const home__uiExamplesData = [
   {
     id: "006",
     section: "Contact",
-    type: "Form",
+    type: "MailTo",
     desc: "Enter Desc Here",
     image: Temp,
     link: "#"
@@ -52,7 +52,7 @@ const home__uiExamplesData = [
   {
     id: "007",
     section: "Contact",
-    type: "MailTo",
+    type: "Form",
     desc: "Enter Desc Here",
     image: Temp,
     link: "#"
@@ -60,7 +60,7 @@ const home__uiExamplesData = [
   {
     id: "008",
     section: "Footer",
-    type: "Directory",
+    type: "Plain",
     desc: "Enter Desc Here",
     image: Temp,
     link: "#"
@@ -68,7 +68,7 @@ const home__uiExamplesData = [
   {
     id: "009",
     section: "Footer",
-    type: "Plain",
+    type: "Hover",
     desc: "Enter Desc Here",
     image: Temp,
     link: "#"
@@ -76,7 +76,7 @@ const home__uiExamplesData = [
   {
     id: "010",
     section: "Footer",
-    type: "Hover",
+    type: "Directory",
     desc: "Enter Desc Here",
     image: Temp,
     link: "#"

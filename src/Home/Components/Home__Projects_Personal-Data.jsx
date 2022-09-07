@@ -11,6 +11,16 @@ const home__projects_websiteData = [
     icon2: "CSS 3",
     icon3: "REACT 18",
   },
+  {
+    id: "002",
+    name: "FIFA Project",
+    desc: "A Website For An Online FIFA Tournament Series",
+    image: Temp,
+    link: "/error",
+    icon1: "HTML 5",
+    icon2: "CSS 3",
+    icon3: "REACT 18",
+  },
 ];
 
 export default home__projects_websiteData;

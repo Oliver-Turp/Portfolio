@@ -40,11 +40,11 @@ const Home__Index = () => {
               <br />
               <br />
               <p>
-                Please snoop around the <Link to="/">projects</Link> I've
-                undertaken in my short career so far
+                Please snoop around the <Link to="projects">projects</Link> I've
+                undertaken in my short career so far,
               </p>
               <p>
-                Or perhaps learn more <Link to="/">about me</Link>
+                Or perhaps learn more <Link to="about">about me</Link>
               </p>
             </div>
           </div>

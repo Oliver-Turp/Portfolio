@@ -50,29 +50,6 @@ function App() {
             <Route path="about" element={<Home__About />} />
             <Route path="contact" element={<Home__Contact />} />
             <Route path="projects" element={<Home__Projects />} />
-            {/* PM REDIRECTS */}
-            <Route
-              path="phoenixmedia"
-              element={<Navigate to="/sandbox/projects/phoenixmedia" replace />}
-            />
-            <Route
-              path="/sandbox/projects/phoenixmedia/tcg"
-              element={
-                <Navigate
-                  to="/sandbox/projects/phoenixmedia/turpochargedgaming"
-                  replace
-                />
-              }
-            />
-            <Route
-              path="/sandbox/projects/phoenixmedia/wof"
-              element={
-                <Navigate
-                  to="/sandbox/projects/phoenixmedia/walloffame"
-                  replace
-                />
-              }
-            />
           </Route>
           {/* PM ROUTES */}
           <Route path="/sandbox/projects/phoenixmedia" element={<PM__Nav />}>
