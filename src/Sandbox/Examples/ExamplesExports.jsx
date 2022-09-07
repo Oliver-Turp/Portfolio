@@ -5,4 +5,8 @@ import Hamburger from "./Components/Header/Hamburger";
 import Gallery from './Components/Image/Gallery';
 import Carousel from './Components/Image/Carousel';
 
-export { Horizontal, DropDown, Hamburger, Gallery, Carousel };
+import Plain from './Components/Footer/Plain';
+import Multiline from './Components/Footer/MultiLine';
+import Directory from './Components/Footer/Directory';
+
+export { Horizontal, DropDown, Hamburger, Gallery, Carousel, Plain, Multiline, Directory };

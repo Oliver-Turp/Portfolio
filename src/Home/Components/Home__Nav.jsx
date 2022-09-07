@@ -65,15 +65,15 @@ const Home__Nav = () => {
               <p>copyright &copy; oliver turp 2022</p>
             </div>
             <div className="home__footer-wrap_content-right">
-              <Link to="https://github.com/Oliver-Turp">
+              <a href="https://github.com/Oliver-Turp" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
-              </Link>
-              <Link to="https://www.linkedin.com/in/oliverturp314/">
+              </a>
+              <a href="https://www.linkedin.com/in/oliverturp314/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
-              <Link to="/">
+              </a>
+              <a href="/">
                 <FontAwesomeIcon icon={faEnvelope} />
-              </Link>
+              </a>
               <ThemeToggle />
             </div>
           </div>

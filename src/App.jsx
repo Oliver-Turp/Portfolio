@@ -28,7 +28,7 @@ import {
   PM__Nav,
 } from "./Sandbox/Phoenix_Media/PhoenixMedia__Exports";
 
-import { Horizontal, DropDown, Hamburger, Carousel, Gallery } from "./Sandbox/Examples/ExamplesExports";
+import { Horizontal, DropDown, Hamburger, Carousel, Gallery, Plain, Multiline, Directory } from "./Sandbox/Examples/ExamplesExports";
 
 import Error from "./Error";
 
@@ -71,6 +71,10 @@ function App() {
           {/* IMAGE */}
           <Route path="/sandbox/examples/image/gallery" element={<Gallery />} />
           <Route path="/sandbox/examples/image/carousel" element={<Carousel />} />
+          {/* FOOTER */}
+          <Route path="/sandbox/examples/footer/plain" element={<Plain />} />
+          <Route path="/sandbox/examples/footer/multiline" element={<Multiline />} />
+          <Route path="/sandbox/examples/footer/directory" element={<Directory />} />
           {/* GENERAL ERROR PAGE */}
           <Route path="*" element={<Error />} />
         </Routes>

@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Profile from "./Assets/Images/Glados.png";
@@ -18,33 +18,27 @@ const GenericContent = () => {
           <title>UI Examples | Temp</title>
         </Helmet>
       </HelmetProvider>
-      <div
-        className="tw-flex tw-flex-col tw-h-60 tw-m-auto"
-        id="generic__content-wrap"
-      >
-        <div className="" id="generic__content-wrap_logo-bg">
-          <div
-            className="tw-flex tw-flex-col tw-content-center tw-m-auto tw-text-center"
-            id="generic__content-wrap_logo-bg_logo-contents"
-          >
-            <img src={Logo} alt="logo" className="tw-m-auto" />
-            <h3 className="tw-text-5xl tw-mt-5 tw-mb-2 tw-capitalize">{element}: {type}</h3>
-            <h6 className="tw-text-xl">Welcome To The Sandbox</h6>
+      <div id="generic__content-wrap">
+        <div id="generic__content-wrap_logo-bg">
+          <div id="generic__content-wrap_logo-bg_logo-contents">
+            <img src={Logo} alt="logo" />
+            <h3>
+              {element}: {type}
+            </h3>
+            <h6>Welcome To The Sandbox</h6>
           </div>
         </div>
-        <div className="" id="generic__content-wrap_text-wrap">
-          <div className="" id="left">
-            <img src={Profile} alt="logo" className="tw-mb-5" />
+        <div id="generic__content-wrap_text-wrap">
+          <div id="left">
+            <img src={Profile} alt="logo" />
             <p>
               GLaDOS (<strong>G</strong>enetic <strong>L</strong>ifeform{" "}
               <strong>a</strong>nd <strong>D</strong>isk <strong>O</strong>
               perating <strong>S</strong>ystsem)
             </p>
-            <p className="tw-mt-2">
-              Winner of the 2022 AI Overlord of The Year Award
-            </p>
+            <p>Winner of the 2022 AI Overlord of The Year Award</p>
           </div>
-          <div className="" id="right">
+          <div id="right">
             <p>
               GLaDOS was a creation of Aperture Science, a personality core
               designed exactly to be fitted as a central computer mainframe. The

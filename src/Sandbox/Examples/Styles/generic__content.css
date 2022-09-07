@@ -1,25 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #generic__content-wrap_logo-bg {
   height: max-content;
   background-image: url("https://www.worldatlas.com/r/w1200/upload/f3/f3/07/shutterstock-299773325-min-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 #generic__content-wrap_logo-bg_logo-contents {
   max-width: 70vw;
   color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
 }
 
 #generic__content-wrap_logo-bg img {
   border-radius: 50%;
   height: auto;
   max-width: 150px;
+  margin: auto;
+}
+
+#generic__content-wrap_logo-bg h3 {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 1.25rem 0;
+  text-transform: capitalize;
+}
+
+#generic__content-wrap_logo-bg h6 {
+  font-size: 1.25rem;
+  line-height: 1;
 }
 
 #generic__content-wrap_text-wrap {
@@ -40,6 +53,7 @@
 #generic__content-wrap_text-wrap #left img {
   width: 30%;
   height: auto;
+  margin-bottom: 1.25rem;
 }
 
 #generic__content-wrap_text-wrap #right {
@@ -49,6 +63,10 @@
   text-align: left;
   margin-left: 5rem;
   letter-spacing: 0.05rem;
+}
+
+#generic__content-wrap_text-wrap #left p:last-child {
+  margin-top: .5rem;
 }
 
 #generic__content-wrap_text-wrap #right p:nth-child(2) {

@@ -63,15 +63,15 @@ const home__uiExamplesData = [
     type: "Plain",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/footer/plain"
   },
   {
     id: "009",
     section: "Footer",
-    type: "Hover",
+    type: "Multi Line",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/footer/multiline"
   },
   {
     id: "010",
@@ -79,7 +79,7 @@ const home__uiExamplesData = [
     type: "Directory",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/footer/directory"
   },
   {
     id: "011",
