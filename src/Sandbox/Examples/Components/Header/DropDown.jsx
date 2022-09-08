@@ -11,7 +11,7 @@ const Horizontal = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Dropdown Menu</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__page-wrap">

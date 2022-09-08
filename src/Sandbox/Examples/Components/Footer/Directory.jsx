@@ -18,7 +18,7 @@ const Directory = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Directory Footer</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__footer-page_wrap">

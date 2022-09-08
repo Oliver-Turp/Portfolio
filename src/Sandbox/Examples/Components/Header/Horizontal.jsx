@@ -9,7 +9,7 @@ const Horizontal = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Horizontal Header</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__page-wrap">

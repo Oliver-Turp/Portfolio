@@ -16,7 +16,7 @@ const Hamburger = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Hamburger Menu</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__nav-wrap">

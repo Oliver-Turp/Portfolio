@@ -47,7 +47,7 @@ const ThemedContent = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Static Theme</title>
         </Helmet>
       </HelmetProvider>
       <div id="generic__content-wrap">

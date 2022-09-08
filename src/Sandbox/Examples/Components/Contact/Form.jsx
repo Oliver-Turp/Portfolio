@@ -15,7 +15,7 @@ const Form = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Contact Form</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__form-wrap">

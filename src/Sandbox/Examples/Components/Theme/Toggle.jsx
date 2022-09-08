@@ -33,7 +33,7 @@ const Toggle = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Theme Toggle</title>
         </Helmet>
       </HelmetProvider>
       <div className="theme__toggle-wrap">

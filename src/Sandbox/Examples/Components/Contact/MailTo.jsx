@@ -11,7 +11,7 @@ const MailTo = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | MailTo: Button</title>
         </Helmet>
       </HelmetProvider>
       <div className="theme__mailto-wrap">

@@ -10,7 +10,7 @@ const Hover = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Multi Line Footer</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__footer-page_wrap">

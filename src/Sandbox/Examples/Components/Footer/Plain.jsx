@@ -15,7 +15,7 @@ const Plain = () => {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>UI Examples | Temp</title>
+          <title>Sandbox | Simple Footer</title>
         </Helmet>
       </HelmetProvider>
       <div className="generic__footer-page_wrap">
