@@ -24,3 +24,7 @@
 .generic__header-drop_wrap:hover>div {
     transform: rotateX(0);
 }
+
+.generic__header-spacing {
+    margin: 0 1rem;
+}

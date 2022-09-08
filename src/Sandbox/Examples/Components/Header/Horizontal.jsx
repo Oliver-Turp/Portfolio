@@ -18,11 +18,11 @@ const Horizontal = () => {
             <p className="generic__header-link underline">Your Name</p>
             <div>
               <p className="generic__header-link underline">Home</p>
-              <p className="generic__header-link underline tw-pl-4 tw-pr-4">
+              <p className="generic__header-link underline generic__header-spacing">
                 Projects
               </p>
               <p className="generic__header-link underline">Services</p>
-              <p className="generic__header-link underline tw-pl-4 tw-pr-4">
+              <p className="generic__header-link underline generic__header-spacing">
                 About
               </p>
               <p className="generic__header-link underline">Contact</p>

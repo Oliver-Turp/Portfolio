@@ -20,7 +20,7 @@ const Horizontal = () => {
             <p className="generic__header-link underline">Your Name</p>
             <div>
               <p className="generic__header-link underline">Home</p>
-              <div className="generic__header-drop_wrap tw-pl-4 tw-pr-4">
+              <div className="generic__header-drop_wrap generic__header-spacing">
                 <p className="generic__header-link">
                   Products <FontAwesomeIcon icon={faCaretDown} />
                 </p>
@@ -31,18 +31,18 @@ const Horizontal = () => {
                   <p className="generic__header-link underline">Link 4</p>
                 </div>
               </div>
-              <div className="generic__header-drop_wrap tw-pl-4 tw-pr-4">
+              <div className="generic__header-drop_wrap">
                 <p className="generic__header-link">
                   Services <FontAwesomeIcon icon={faCaretDown} />
                 </p>
-                <div className="generic__header-drop_content">
+                <div className="generic__header-drop_content generic__header-spacing">
                   <p className="generic__header-link underline">Link 1</p>
                   <p className="generic__header-link underline">Link 2</p>
                   <p className="generic__header-link underline">Link 3</p>
                   <p className="generic__header-link underline">Link 4</p>
                 </div>
               </div>
-              <p className="generic__header-link underline  tw-pl-4 tw-pr-4">
+              <p className="generic__header-link underline generic__header-spacing">
                 About
               </p>
               <p className="generic__header-link underline">Contact</p>
