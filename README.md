@@ -19,8 +19,8 @@
 - [ ] Scan & Upload My CV
 - [ ] Scan & Upload My Degree
 - [ ] Create Images For Project Cards
-- [ ] Contact MailTo
-- [ ] Contact Form
+- [x] Contact MailTo
+- [x] Contact Form
 - [x] Theme Static
 - [x] Theme Toggle
 - [ ] Link Eli Turp When Finished
