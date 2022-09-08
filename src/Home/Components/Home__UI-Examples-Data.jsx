@@ -47,7 +47,7 @@ const home__uiExamplesData = [
     type: "MailTo",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#",
+    link: "/sandbox/examples/contact/mailto",
   },
   {
     id: "007",
@@ -55,7 +55,7 @@ const home__uiExamplesData = [
     type: "Form",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#",
+    link: "/sandbox/examples/contact/form",
   },
   {
     id: "008",

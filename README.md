@@ -21,8 +21,8 @@
 - [ ] Create Images For Project Cards
 - [ ] Contact MailTo
 - [ ] Contact Form
-- [ ] Theme Static
-- [ ] Theme Toggle
+- [x] Theme Static
+- [x] Theme Toggle
 - [ ] Link Eli Turp When Finished
 - [ ] Link Fifa Project When Finished
 - [ ] Link Rainy's Site When Finished

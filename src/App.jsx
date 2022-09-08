@@ -39,6 +39,8 @@ import {
   Directory,
   Static,
   Toggle,
+  MailTo,
+  Form,
 } from "./Sandbox/Examples/ExamplesExports";
 
 import Error from "./Error";
@@ -94,6 +96,9 @@ function App() {
             path="/sandbox/examples/image/carousel"
             element={<Carousel />}
           />
+          {/* CONTACT */}
+          <Route path="/sandbox/examples/contact/mailto" element={<MailTo />} />
+          <Route path="/sandbox/examples/contact/form" element={<Form />} />
           {/* FOOTER */}
           <Route path="/sandbox/examples/footer/plain" element={<Plain />} />
           <Route
