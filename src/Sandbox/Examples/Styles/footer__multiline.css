@@ -13,6 +13,7 @@
     align-items: center;
     text-align: center;    
     letter-spacing: 0.1rem;
+    background-color: lightblue;
   }
   
   .multiline__footer-wrap a {

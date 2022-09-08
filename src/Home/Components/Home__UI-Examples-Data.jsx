@@ -7,7 +7,7 @@ const home__uiExamplesData = [
     type: "Horizontal",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/header/horizontal"
+    link: "/sandbox/examples/header/horizontal",
   },
   {
     id: "002",
@@ -15,7 +15,7 @@ const home__uiExamplesData = [
     type: "Drop Down",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/header/dropdown"
+    link: "/sandbox/examples/header/dropdown",
   },
   {
     id: "003",
@@ -23,7 +23,7 @@ const home__uiExamplesData = [
     type: "Hamburger",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/header/hamburger"
+    link: "/sandbox/examples/header/hamburger",
   },
   {
     id: "004",
@@ -31,7 +31,7 @@ const home__uiExamplesData = [
     type: "Gallery",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/image/gallery"
+    link: "/sandbox/examples/image/gallery",
   },
   {
     id: "005",
@@ -39,7 +39,7 @@ const home__uiExamplesData = [
     type: "Carousel",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/image/carousel"
+    link: "/sandbox/examples/image/carousel",
   },
   {
     id: "006",
@@ -47,7 +47,7 @@ const home__uiExamplesData = [
     type: "MailTo",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "#",
   },
   {
     id: "007",
@@ -55,7 +55,7 @@ const home__uiExamplesData = [
     type: "Form",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "#",
   },
   {
     id: "008",
@@ -63,7 +63,7 @@ const home__uiExamplesData = [
     type: "Plain",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/footer/plain"
+    link: "/sandbox/examples/footer/plain",
   },
   {
     id: "009",
@@ -71,7 +71,7 @@ const home__uiExamplesData = [
     type: "Multi Line",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/footer/multiline"
+    link: "/sandbox/examples/footer/multiline",
   },
   {
     id: "010",
@@ -79,7 +79,7 @@ const home__uiExamplesData = [
     type: "Directory",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "/sandbox/examples/footer/directory"
+    link: "/sandbox/examples/footer/directory",
   },
   {
     id: "011",
@@ -87,7 +87,7 @@ const home__uiExamplesData = [
     type: "Static",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/theme/static",
   },
   {
     id: "012",
@@ -95,7 +95,7 @@ const home__uiExamplesData = [
     type: "Toggle",
     desc: "Enter Desc Here",
     image: Temp,
-    link: "#"
+    link: "/sandbox/examples/theme/toggle",
   },
 ];
 

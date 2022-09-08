@@ -18,9 +18,9 @@
 - [x] FIX JS ERRORS IN THE PM YOUTUBE PAGE
 - [ ] Scan & Upload My CV
 - [ ] Scan & Upload My Degree
-- [ ] Footer Plain
-- [ ] Footer Hover
-- [ ] Footer Directory
+- [ ] Create Images For Project Cards
+- [ ] Contact MailTo
+- [ ] Contact Form
 - [ ] Theme Static
 - [ ] Theme Toggle
 - [ ] Link Eli Turp When Finished

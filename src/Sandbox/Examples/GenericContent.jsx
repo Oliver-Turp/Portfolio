@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Profile from "./Assets/Images/Glados.png";
 import Logo from "./Assets/Images/Logo.png";
@@ -13,11 +12,6 @@ const GenericContent = () => {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>UI Examples | Temp</title>
-        </Helmet>
-      </HelmetProvider>
       <div id="generic__content-wrap">
         <div id="generic__content-wrap_logo-bg">
           <div id="generic__content-wrap_logo-bg_logo-contents">

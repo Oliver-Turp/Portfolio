@@ -28,7 +28,18 @@ import {
   PM__Nav,
 } from "./Sandbox/Phoenix_Media/PhoenixMedia__Exports";
 
-import { Horizontal, DropDown, Hamburger, Carousel, Gallery, Plain, Multiline, Directory } from "./Sandbox/Examples/ExamplesExports";
+import {
+  Horizontal,
+  DropDown,
+  Hamburger,
+  Carousel,
+  Gallery,
+  Plain,
+  Multiline,
+  Directory,
+  Static,
+  Toggle,
+} from "./Sandbox/Examples/ExamplesExports";
 
 import Error from "./Error";
 
@@ -65,16 +76,37 @@ function App() {
           </Route>
           {/* SANDBOX ROUTES */}
           {/* HEADERS */}
-          <Route path="/sandbox/examples/header/horizontal" element={<Horizontal />} />
-          <Route path="/sandbox/examples/header/dropdown" element={<DropDown />} />
-          <Route path="/sandbox/examples/header/hamburger" element={<Hamburger />} />
+          <Route
+            path="/sandbox/examples/header/horizontal"
+            element={<Horizontal />}
+          />
+          <Route
+            path="/sandbox/examples/header/dropdown"
+            element={<DropDown />}
+          />
+          <Route
+            path="/sandbox/examples/header/hamburger"
+            element={<Hamburger />}
+          />
           {/* IMAGE */}
           <Route path="/sandbox/examples/image/gallery" element={<Gallery />} />
-          <Route path="/sandbox/examples/image/carousel" element={<Carousel />} />
+          <Route
+            path="/sandbox/examples/image/carousel"
+            element={<Carousel />}
+          />
           {/* FOOTER */}
           <Route path="/sandbox/examples/footer/plain" element={<Plain />} />
-          <Route path="/sandbox/examples/footer/multiline" element={<Multiline />} />
-          <Route path="/sandbox/examples/footer/directory" element={<Directory />} />
+          <Route
+            path="/sandbox/examples/footer/multiline"
+            element={<Multiline />}
+          />
+          <Route
+            path="/sandbox/examples/footer/directory"
+            element={<Directory />}
+          />
+          {/* Theme */}
+          <Route path="/sandbox/examples/theme/static" element={<Static />} />
+          <Route path="/sandbox/examples/theme/toggle" element={<Toggle />} />
           {/* GENERAL ERROR PAGE */}
           <Route path="*" element={<Error />} />
         </Routes>
