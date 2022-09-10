@@ -24,7 +24,7 @@ const Home__TechSlider = () => {
       mobileBreakpoint={250}
     >
       {TechSlides.map((slide) => (
-        <Carousel.Item>
+        <Carousel.Item key={slide.name}>
           <img width="100%" src={slide.image} className="tech-slider_image" />
         </Carousel.Item>
       ))}

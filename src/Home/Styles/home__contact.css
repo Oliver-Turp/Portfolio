@@ -24,6 +24,7 @@
 
 .home__contact-wrap_content-wrap_left {
   flex: 1;
+  position: relative;
 }
 
 .home__contact_input-group {
@@ -83,6 +84,34 @@
   margin: 1rem 0;
 }
 
+body .home__contact-wrap_content-wrap_right_links a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
 .home__contact-wrap_content-wrap_right_text h2 {
   margin-bottom: 1rem;
+}
+
+.home__contact-wrap_content-wrap_left form.sent {
+  opacity: 0;
+}
+
+.home__contact-wrap_content-wrap_left #form_success {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  text-align: center;
+  opacity: 0;
+  z-index: -99;
+}
+
+.home__contact-wrap_content-wrap_left #form_success.visible {
+  opacity: 1;
+  z-index: initial;
 }

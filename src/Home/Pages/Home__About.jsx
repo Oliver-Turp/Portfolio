@@ -5,6 +5,7 @@ import { faCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import CV from "../../../public/Spotify.pdf";
+import Degree from "../../../public/Civil Engineering Degree.pdf";
 
 import "../Styles/home__about.css";
 
@@ -37,7 +38,7 @@ const Home__About = () => {
             <Link to={CV} target="_blank">
               Download my CV
             </Link>
-            <Link to={CV} target="_blank">
+            <Link to={Degree} target="_blank">
               Download my degree
             </Link>
           </div>

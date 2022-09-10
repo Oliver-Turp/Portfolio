@@ -38,6 +38,7 @@
 
 .home__about-wrap_content-buttons {
   margin: 3rem 0;
+
 }
 
 .home__about-wrap_content-buttons a {
@@ -46,6 +47,7 @@
   border: 1px solid #4dac6a;
   border-radius: 0.25rem;
   transition: background 0.4s ease-in-out;
+  text-transform: capitalize;
 }
 
 .home__about-wrap_content-buttons a:first-child {

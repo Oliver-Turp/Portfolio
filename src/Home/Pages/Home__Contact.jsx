@@ -1,8 +1,44 @@
+import { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import emailjs from "emailjs-com";
 
 import "../Styles/home__contact.css";
 
 const Home__Contact = () => {
+  const [btnState, setBtnState] = useState(false);
+
+  function toggleSubmit() {
+    setBtnState((btnState) => !btnState);
+  }
+
+  function formValidation(e) {
+    const captcha = document.getElementById("captcha").value;
+
+    if (captcha == 69420) {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          "service_xuml4ms",
+          "template_0wg5ubp",
+          e.target,
+          "d0QMfD17nPqDUJgHd"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+      toggleSubmit();
+    } else {
+      e.preventDefault();
+      alert("ERROR: Incorrect Captcha.... Are You A Robot?");
+    }
+  }
+
   return (
     <>
       <HelmetProvider>
@@ -15,10 +51,16 @@ const Home__Contact = () => {
           <h1>contact me</h1>
           <div className="home__contact-wrap_content-wrap">
             <div className="home__contact-wrap_content-wrap_left">
+              <span id="form_success" className={btnState ? "visible" : ""}>
+                <p>message sent!</p>
+              </span>
               <form
-                action=""
-                method="POST"
-                className="home__contact-wrap_content-wrap_left_form"
+                className={
+                  btnState
+                    ? "home__contact-wrap_content-wrap_left_form sent"
+                    : "home__contact-wrap_content-wrap_left_form"
+                }
+                onSubmit={formValidation}
               >
                 <div className="home__contact_input-group">
                   <label>Name:</label>
@@ -58,7 +100,8 @@ const Home__Contact = () => {
                   <label>What Is &radic;4819136400 ?</label>
                   <input
                     type="number"
-                    name="name"
+                    id="captcha"
+                    name="captcha"
                     className="home__contact_input-item"
                     pattern="(69420)$"
                     required
@@ -85,7 +128,6 @@ const Home__Contact = () => {
                   <br />
                   <br />
                   head hunting for your latest project?
-                  <br />
                   <br />
                   <br />
                   please feel free to get in touch via any of the mediums
