@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  margin-bottom: 15rem;
 }
 
 .home__index-wrap_bio-wrap {
-  height: 500px;
+  height: 100%;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   transition: background-image 0.5s ease-in-out;
+  margin-bottom: 3rem;
 }
 
 .home__index-wrap_bio-content {
@@ -44,6 +43,20 @@
   line-height: 1.75rem;
 }
 
+.home__index-wrap_bio-content_text p:last-child {
+  margin-bottom: 0;
+}
+
 .home__index-wrap_bio-content_text p a {
   text-decoration: underline;
+}
+
+.home__index-wrap_section-wrap {
+  width: 60vw;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+.home__index-wrap_section-wrap h2 {
+  margin-bottom: 1.5rem;
 }

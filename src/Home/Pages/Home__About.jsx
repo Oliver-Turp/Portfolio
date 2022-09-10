@@ -26,8 +26,11 @@ const Home__About = () => {
               enthusiastic to learn; I have integrity and a good work ethic. I
               am told I have a mature attitude and keen sense of humour which I
               use to put people at ease. I am ambitious. I would like to look
-              back on a career and say, <i>“I have helped develop something that
-              has improved the world and people’s lives.”</i>
+              back on a career and say,{" "}
+              <i>
+                “I have helped develop something that has improved the world and
+                people’s lives.”
+              </i>
             </p>
           </section>
           <div className="home__about-wrap_content-buttons">
@@ -104,7 +107,7 @@ const Home__About = () => {
             </p>
             <p>
               <FontAwesomeIcon icon={faArrowRight} /> <strong> </strong>
-              wordpress
+              react 18
             </p>
             <p>
               <FontAwesomeIcon icon={faArrowRight} /> <strong> </strong>XAMPP

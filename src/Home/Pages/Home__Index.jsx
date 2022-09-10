@@ -2,10 +2,15 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Temp from "../Assets/Images/Glados.jpg";
+import WebsiteData from "../Components/Home__Projects_Websites-Data";
+import TechSlider from "../Components/Home__Tech-Slider";
 
 import "../Styles/home__index.css";
 
 const Home__Index = () => {
+  const Featured = WebsiteData.filter(function (item) {
+    return item.featured === true;
+  });
   return (
     <>
       <HelmetProvider>
@@ -31,14 +36,14 @@ const Home__Index = () => {
                 national charity covering everything from data cleaning and
                 analysis to an intranet redesign project.
               </p>
-              <br />
-              <br />
+              {/* <br />
+              <br /> */}
               <p>
                 I have taken a keen interest in front end web design and
                 development as well as data analysis.
               </p>
-              <br />
-              <br />
+              {/* <br />
+              <br /> */}
               <p>
                 Please snoop around the <Link to="projects">projects</Link> I've
                 undertaken in my short career so far,
@@ -48,6 +53,31 @@ const Home__Index = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="home__index-wrap_section-wrap">
+          <h2>custom static sites</h2>
+          <div className="home__projects-content_grid">
+            {Featured.map((card) => (
+              <div className="home__projects_card-wrap" key={card.id}>
+                <Link to={card.link} target="_blank">
+                  <img src={card.image} alt={card.name} />
+                </Link>
+                <div className="home__projects_card-body">
+                  <h5>{card.name}</h5>
+                  <p>{card.desc}</p>
+                </div>
+                <div className="home__projects_card-footer">
+                  <p>{card.icon1}</p>
+                  <p>{card.icon2}</p>
+                  <p>{card.icon3}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="home__index-wrap_section-wrap">
+          <h2>technologies i've worked with</h2>
+          <TechSlider />
         </div>
       </div>
     </>

@@ -25,7 +25,7 @@ body.Light .home__header-wrap a {
 }
 
 body.Light .home__index-wrap_bio-wrap {
-  /* background-image: url("../Assets/Images/CircuitBoardRed.jpg"); */
+  /* background-image: url("../Assets/Images/DarkMode.gif"); */
 }
 
 body.Light .home__about-wrap_content-buttons a:hover,
@@ -40,6 +40,10 @@ body.Light .home__UI_card-body {
 }
 
 body.Light .home__projects_card-footer {
+  background-color: #f7f7f7;
+}
+
+body.Light .home__index-wrap_section-wrap .tech-slider_image{
   background-color: #f7f7f7;
 }
 
@@ -63,7 +67,7 @@ body.Dark .home__header-wrap a {
 }
 
 body.Dark .home__index-wrap_bio-wrap {
-  /* background-image: url("../Assets/Images/CircuitBoard.jpg"); */
+  background-image: url("../Assets/Images/DarkMode.gif");
 }
 
 body.Dark .home__about-wrap_content-buttons a:hover,
@@ -77,6 +81,10 @@ body.Dark .home__UI_card-body {
 }
 
 body.Dark .home__projects_card-footer {
+  background-color: #101820;
+}
+
+body.Dark .home__index-wrap_section-wrap .tech-slider_image{
   background-color: #101820;
 }
 

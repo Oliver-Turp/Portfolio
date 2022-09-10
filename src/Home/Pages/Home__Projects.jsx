@@ -2,12 +2,27 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
-import PersonalData from "../Components/Home__Projects_Personal-Data";
-import UIData from "../Components/Home__UI-Examples-Data";
+import UIData from "../Components/Home__Sandbox_UI-Data";
 
 import "../Styles/home__projects.css";
 
 const Home__Projects = () => {
+  const StaticSites = WebsiteData.filter(function (section) {
+    return section.type === "Static Site";
+  });
+
+  const ReactApps = WebsiteData.filter(function (section) {
+    return section.type === "React App";
+  });
+
+  const OnlineStores = WebsiteData.filter(function (section) {
+    return section.type === "OnlineStore";
+  });
+
+  const PersonalProjects = WebsiteData.filter(function (section) {
+    return section.type === "Personal Project";
+  });
+
   const UIHeaders = UIData.filter(function (item) {
     return item.section === "Header";
   });
@@ -38,9 +53,28 @@ const Home__Projects = () => {
       <div className="home__projects-wrap">
         <div className="home__projects-content">
           <h1>all projects</h1>
-          <h2>custom static websites</h2>
+          {/* <h2>custom static sites</h2>
           <div className="home__projects-content_grid">
-            {WebsiteData.map((card) => (
+            {StaticSites.map((card) => (
+              <div className="home__projects_card-wrap" key={card.id}>
+                <Link to={card.link} target="_blank">
+                  <img src={card.image} alt={card.name} />
+                </Link>
+                <div className="home__projects_card-body">
+                  <h5>{card.name}</h5>
+                  <p>{card.desc}</p>
+                </div>
+                <div className="home__projects_card-footer">
+                  <p>{card.icon1}</p>
+                  <p>{card.icon2}</p>
+                  <p>{card.icon3}</p>
+                </div>
+              </div>
+            ))}
+          </div> */}
+          <h2>dynamic react apps</h2>
+          <div className="home__projects-content_grid">
+            {ReactApps.map((card) => (
               <div className="home__projects_card-wrap" key={card.id}>
                 <Link to={card.link} target="_blank">
                   <img src={card.image} alt={card.name} />
@@ -57,9 +91,28 @@ const Home__Projects = () => {
               </div>
             ))}
           </div>
+          {/* <h2>online stores</h2>
+          <div className="home__projects-content_grid">
+            {OnlineStores.map((card) => (
+              <div className="home__projects_card-wrap" key={card.id}>
+                <Link to={card.link} target="_blank">
+                  <img src={card.image} alt={card.name} />
+                </Link>
+                <div className="home__projects_card-body">
+                  <h5>{card.name}</h5>
+                  <p>{card.desc}</p>
+                </div>
+                <div className="home__projects_card-footer">
+                  <p>{card.icon1}</p>
+                  <p>{card.icon2}</p>
+                  <p>{card.icon3}</p>
+                </div>
+              </div>
+            ))}
+          </div> */}
           <h2>personal projects</h2>
           <div className="home__projects-content_grid">
-            {PersonalData.map((card) => (
+            {PersonalProjects.map((card) => (
               <div className="home__projects_card-wrap" key={card.id}>
                 <Link to={card.link} target="_blank">
                   <img src={card.image} alt={card.name} />
