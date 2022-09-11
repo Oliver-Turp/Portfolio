@@ -125,6 +125,14 @@ const Home__About = () => {
               <FontAwesomeIcon icon={faArrowRight} /> <strong> </strong>
               git & gitHub
             </p>
+            <p>
+              <FontAwesomeIcon icon={faArrowRight} /> <strong> </strong>
+              noSQL
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faArrowRight} /> <strong> </strong>
+              mongoDB
+            </p>
           </div>
         </div>
       </div>

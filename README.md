@@ -13,8 +13,8 @@
 - [x] Add a 'services' page? Maybe too money grabby as prices vary. Could use a 'from $x' method? Either way what would I offer? I'm only really good with static sites. Lists of 1 aren't good to look at.
 - [ ] ~~See if Sam wants to make graphic wallpaper for the projects bg~~ He wouldn't do it. ET may help instead
 - [ ] ~~See if Sam would always make me a logo around my initials. This can be converted to a favicon too.~~ He wouldn't do it. ET may help instead
-- [ ] Scan & Upload My CV
-- [ ] Scan & Upload My Degree
+- [ ] Finish & Upload My CV as PDF
+- [x] Scan & Upload My Degree
 - [ ] Create Images For Project Cards
 - [x] Contact MailTo
 - [x] Contact Form
@@ -24,6 +24,9 @@
 - [ ] Link Fifa Project When Finished
 - [ ] Link Rainy's Site When Finished
 - [ ] Switch Projects File to mongoDB. That way I only ever need to update the DB and never rebuild the site to make changes!
+- [ ] Add Certificates To About Section? Need something to break up the text
+- [ ] Prerender large image files
+- [ ] Permanent content for the error page? Or something comical and an auto-redirect backwards? 
 
 # Bugs
 - [x] FIX JS ERRORS IN THE PM NAV

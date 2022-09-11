@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Temp from "../Assets/Images/Glados.jpg";
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
 import TechSlider from "../Components/Home__Tech-Slider";
-import LightBG from "../../Sandbox/Phoenix_Media/Assets/Videos/video.mp4";
+import LightBG from "../Assets/Images/CircuitBoard.jpg";
 import DarkBG from "../Assets/Images/BitRate2Mbps.mp4";
 
 import "../Styles/home__index.css";

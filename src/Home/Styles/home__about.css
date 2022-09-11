@@ -32,6 +32,10 @@
   padding-bottom: 3rem;
 }
 
+.home__about-wrap_content-list:last-child {
+  padding: 0;
+}
+
 .home__about-wrap_content-list p {
   padding: 0.5rem 0;
 }
