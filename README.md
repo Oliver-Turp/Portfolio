@@ -13,9 +13,6 @@
 - [x] Add a 'services' page? Maybe too money grabby as prices vary. Could use a 'from $x' method? Either way what would I offer? I'm only really good with static sites. Lists of 1 aren't good to look at.
 - [ ] ~~See if Sam wants to make graphic wallpaper for the projects bg~~ He wouldn't do it. ET may help instead
 - [ ] ~~See if Sam would always make me a logo around my initials. This can be converted to a favicon too.~~ He wouldn't do it. ET may help instead
-- [x] FIX JS ERRORS IN THE PM NAV
-- [x] FIX JS ERRORS IN THE PM PATREON PAGE
-- [x] FIX JS ERRORS IN THE PM YOUTUBE PAGE
 - [ ] Scan & Upload My CV
 - [ ] Scan & Upload My Degree
 - [ ] Create Images For Project Cards
@@ -26,6 +23,13 @@
 - [ ] Link Eli Turp When Finished
 - [ ] Link Fifa Project When Finished
 - [ ] Link Rainy's Site When Finished
+- [ ] Switch Projects File to mongoDB. That way I only ever need to update the DB and never rebuild the site to make changes!
+
+# Bugs
+- [x] FIX JS ERRORS IN THE PM NAV
+- [x] FIX JS ERRORS IN THE PM PATREON PAGE
+- [x] FIX JS ERRORS IN THE PM YOUTUBE PAGE
+- [x] Video Stuttering On Home Page
 
 # Pages
 

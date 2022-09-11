@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Temp from "../Assets/Images/Glados.jpg";
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
 import TechSlider from "../Components/Home__Tech-Slider";
+import DarkBG from "../Assets/Images/BitRate2Mbps.mp4";
 
 import "../Styles/home__index.css";
 
@@ -20,6 +21,9 @@ const Home__Index = () => {
       </HelmetProvider>
       <div className="home__index-wrap">
         <div className="home__index-wrap_bio-wrap">
+          <video className="home__bio-vid" autoPlay muted loop>
+            <source src={DarkBG} type="video/mp4" />
+          </video>
           <div className="home__index-wrap_bio-content">
             <div className="home__index-wrap_bio-content_logo">
               <img src={Temp} alt="Temp" />

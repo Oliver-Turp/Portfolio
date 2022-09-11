@@ -7,11 +7,16 @@
 .home__index-wrap_bio-wrap {
   height: 100%;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: background-image 0.5s ease-in-out;
   margin-bottom: 3rem;
+  position: relative
+}
+
+.home__index-wrap_bio-wrap video {
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .home__index-wrap_bio-content {
@@ -20,6 +25,8 @@
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   padding: 3rem 0;
+  z-index: 1;
+  position: relative;
 }
 
 .home__index-wrap_bio-content_logo img {

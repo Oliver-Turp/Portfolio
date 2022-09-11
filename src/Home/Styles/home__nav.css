@@ -24,10 +24,6 @@ body.Light .home__header-wrap a {
   color: white;
 }
 
-body.Light .home__index-wrap_bio-wrap {
-  /* background-image: url("../Assets/Images/DarkMode.gif"); */
-}
-
 body.Light .home__about-wrap_content-buttons a:hover,
 body.Light .home__contact_input-btn:hover {
   background-color: #101820;
@@ -64,10 +60,6 @@ body.Dark .home__header-wrap {
 
 body.Dark .home__header-wrap a {
   color: white;
-}
-
-body.Dark .home__index-wrap_bio-wrap {
-  background-image: url("../Assets/Images/Squashed.gif");
 }
 
 body.Dark .home__about-wrap_content-buttons a:hover,
