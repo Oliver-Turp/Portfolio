@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Temp from "../Assets/Images/Glados.jpg";
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
 import TechSlider from "../Components/Home__Tech-Slider";
+import LightBG from "../Assets/Images/CircuitBoard.jpg";
 import DarkBG from "../Assets/Images/BitRate2Mbps.mp4";
 
 import "../Styles/home__index.css";
@@ -12,6 +14,13 @@ const Home__Index = () => {
   const Featured = WebsiteData.filter(function (item) {
     return item.featured === true;
   });
+
+  const [mode, setMode] = useState(localStorage.getItem("mode"));
+
+  const ThemeToggle = document.getElementsByClassName("fa-solid");
+
+  console.log(ThemeToggle);
+
   return (
     <>
       <HelmetProvider>
@@ -22,7 +31,7 @@ const Home__Index = () => {
       <div className="home__index-wrap">
         <div className="home__index-wrap_bio-wrap">
           <video className="home__bio-vid" autoPlay muted loop>
-            <source src={DarkBG} type="video/mp4" />
+            <source src={mode === "Dark" ? DarkBG : LightBG} type="video/mp4" />
           </video>
           <div className="home__index-wrap_bio-content">
             <div className="home__index-wrap_bio-content_logo">
