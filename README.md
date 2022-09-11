@@ -33,6 +33,7 @@
 - [x] FIX JS ERRORS IN THE PM PATREON PAGE
 - [x] FIX JS ERRORS IN THE PM YOUTUBE PAGE
 - [x] Video Stuttering On Home Page
+- [ ] Index Carousel Is Broken
 
 # Pages
 

@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Temp from "../Assets/Images/Glados.jpg";
 import WebsiteData from "../Components/Home__Projects_Websites-Data";
-import TechSlider from "../Components/Home__Tech-Slider";
+// import TechSlider from "../Components/Home__Tech-Slider";
 import LightBG from "../Assets/Images/CircuitBoard.jpg";
 import DarkBG from "../Assets/Images/BitRate2Mbps.mp4";
 
@@ -85,8 +85,8 @@ const Home__Index = () => {
           </div>
         </div>
         <div className="home__index-wrap_section-wrap">
-          <h2>technologies i've worked with</h2>
-          <TechSlider />
+          {/* <h2>technologies i've worked with</h2> */}
+          {/* <TechSlider /> */}
         </div>
       </div>
     </>
