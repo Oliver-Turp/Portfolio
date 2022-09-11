@@ -19,6 +19,22 @@
   width: 100%;
 }
 
+body.Light .home__bio-vid.Light {
+  display: block;
+}
+
+body.Light .home__bio-vid.Dark {
+  display: none;
+}
+
+body.Dark .home__bio-vid.Light {
+  display: none;
+}
+
+body.Dark .home__bio-vid.Dark {
+  display: block;
+}
+
 .home__index-wrap_bio-content {
   width: 60vw;
   margin: auto;
@@ -62,6 +78,7 @@
   width: 60vw;
   margin: 0 auto;
   text-transform: capitalize;
+  display: none;
 }
 
 .home__index-wrap_section-wrap h2 {
